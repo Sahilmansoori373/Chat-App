@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class MessageController {
 
     @MessageMapping("/message")
+
     @SendTo("/to/return")
     public Message getContent(@RequestBody Message message){
         try {
